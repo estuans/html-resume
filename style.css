@@ -8,9 +8,9 @@
 }
 
 :root{
-  --page-width: 8.5in;
-  --page-height: 11in;
-  --main-width: 6.4in;
+  --page-width: 210mm;
+  --page-height: 250mm;
+  --main-width: 6.2in;
   --sidebar-width: calc(var(--page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
 
@@ -60,7 +60,7 @@ li{
   float: right;
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
-  height: 100%;
+  height: 97%;
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #c7c7c7;
   font-size: 8.5pt;
@@ -381,4 +381,21 @@ li{
 
 i.fa {
  color: #ff6200;
+}
+
+
+@media print {
+  #disclaimer {
+    position: relative !important;
+    display: none !important;
+    height: 0;
+  }
+
+  #mugshot {
+    display: none;
+  }
+
+  #main {
+    padding: 0 0.25in 0 0.25in;
+  }
 }
