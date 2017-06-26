@@ -42,7 +42,7 @@ body{
 
 h1, h2, h3{
   margin: 0;
-  color: orange;
+  color: #ff6200;
 }
 
 li{
@@ -62,7 +62,7 @@ li{
   width: var(--sidebar-width);
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #888888;
+  background-color: #c7c7c7;
   font-size: 8.5pt;
 }
 
@@ -220,7 +220,7 @@ li{
   width: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
   height: calc(var(--decorator-outer-dim) - (var(--decorator-border-width) * 2));
   border-radius: calc((var(--decorator-outer-dim) - (var(--decorator-border-width) * 2)) / 2);
-  background-color: orange;
+  background-color: #ff6200;
 }
 
 .blocks:last-child .decorator{ /* slightly shortens it */
@@ -279,7 +279,7 @@ li{
   font-style: normal;
   text-decoration: inherit;
   content: "\f041";
-  color: orange;
+  color: #ff6200;
 }
 
 /***** fine-tunes on the lists... *****/
@@ -380,5 +380,5 @@ li{
 }
 
 i.fa {
- color: orange;
+ color: #ff6200;
 }
